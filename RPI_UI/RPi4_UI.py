@@ -172,7 +172,7 @@ def generate_graph():
             plt.clf()
 
             # Create subplots with only one plot for the histogram
-            fig, ax2 = plt.subplots(1, 1, figsize=(10, 6))  # Adjust the size as needed
+            fig, ax2 = plt.subplots(1, 1, figsize=(10, 8))  # Adjust the size as needed
             # Apply filter to remove the anomalies
             filtered_delay = [delay for delay in delay if
                               delay >= mean_value - 3 * stddev_value and delay <= mean_value + 3 * stddev_value]
@@ -369,7 +369,7 @@ def sync_time_with_ntp_server():
 
 
 if __name__ == "__main__":
-    app = App(title="Reval GUI", width=1024, height=800)
+    app = App(title="Reval GUI", width=1024, height=1000)
     # Set the app window position to the top left corner
     app.tk.attributes("-alpha", True)
     app.tk.geometry("+0+0")

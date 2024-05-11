@@ -115,7 +115,7 @@ def generate_graph():
         plt.clf()
 
         # Set the size of the plot
-        plt.figure(figsize=(10, 6))  # Adjust the size as needed
+        plt.figure(figsize=(10, 8))  # Adjust the size as needed
 
         # Plot the data
         plt.plot(timeArr, delay)
@@ -354,7 +354,7 @@ def sync_time_with_ntp_server():
 
     
 if __name__ == "__main__":    
-    app = App(title="Reval GUI", width=1024, height=800)
+    app = App(title="Reval GUI", width=1024, height=1000)
     # Set the app window position to the top left corner
     app.tk.attributes("-alpha", True)
     app.tk.geometry("+0+0")
